@@ -1,0 +1,103 @@
+/* Main table */
+.tabTable {
+	font: 12px tahoma, verdana, arial;
+	color: black;
+	width: 400px;
+}
+/* Table containing column caption text and sorting arrows */
+.tabCaptionCell {
+	background: #4682B4;
+	height: 22px;
+	text-align: center;
+}
+A.tabPagingArrowCell, A.tabPagingArrowCell:link, a.tabPagingArrowCell:visited, a.tabPagingArrowCell:active { 
+	color: white;
+}
+/* Table cell containing column caption text */
+.tabCaptionLink {
+	font: bold 12px tahoma, verdana, arial;
+	text-align: center;
+	color: white;
+}
+A.tabCaptionLink, A.tabCaptionLink:link, a.tabCaptionLink:visited, a.tabCaptionLink:active { 
+	font: bold 12px tahoma, verdana, arial;
+	color: white;
+}
+ 
+/* Table cell containing sorting arrow  */
+.tabSortArrowCell {
+	width: 12px;
+	padding-left: 2px
+}
+/* Cell of table with no effects applied at the top of the table */
+/* Cell of table with no effects applied at the bottom of the table */
+.tabHeadCell, .tabFootCell {
+	font: 12px tahoma, verdana, arial;
+	text-align: center;
+	background: #DBEAF5;
+}
+/* Table containing paging arrows and text */
+.tabPaging {
+	background: #4682B4;
+}
+/* Table cell containing paging text */
+.tabPagingText {
+	font: 12px tahoma, verdana, arial;
+	text-align: center;
+	height: 18px;
+	color: white;
+}
+/* Table cell containing paging arrow */
+.tabPagingArrowCell {
+	font: bold 12px tahoma, verdana, arial;
+	color: #DBEAF5;
+}
+/* Table containing filtering form */
+.tabFilter {
+	font: 11px tahoma, verdana, arial;
+	color: #DBEAF5;
+	background: #4682B4;
+	height: 18px;
+}
+/* Input field for filtering pattern */
+.tabFilterPattern {
+	font: 11px tahoma, verdana, arial;
+	border-top: 1px inset #DBEAF5;
+	border-bottom: 1px inset #DBEAF5;
+	border-left: 1px inset #DBEAF5;
+	border-right: 1px inset #DBEAF5;
+}
+/* Dropdown list in a filtering form */
+.tabFilterSelect {
+	font: 11px tahoma, verdana, arial;
+}
+
+/* Styles for data cells */
+
+/* Cell of table body, column 0 */
+.tabBodyCol0 {
+	font-family: tahoma, verdana, arial;
+	font-size: 12px;
+	color: black;
+	width: 160px;
+}
+/* Cell of table body, column 1 */
+.tabBodyCol1 {
+	font-family: tahoma, verdana, arial;
+	font-size: 12px;
+	width: 120px;
+}
+/* Cell of table body, column 2 */
+.tabBodyCol2 {
+	font-family: tahoma, verdana, arial;
+	font-size: 12px;
+	text-align: center;
+	width: 60px;
+}
+/* Cell of table body, column 3 */
+.tabBodyCol3 {
+	font-family: tahoma, verdana, arial;
+	font-size: 12px;
+	text-align: right;
+	width: 60px;
+}

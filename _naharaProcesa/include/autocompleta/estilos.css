@@ -1,0 +1,36 @@
+/* estilos para autocompletar */
+#ajax_listOfOptions
+{
+	position:absolute;	/* Never change this one */
+	width:200px;	/* ancho box */
+	/*height:200px;*/	/* alto box */
+	overflow:auto;	/* tipo de scroll */
+	border:1px solid #317082;	/* Dark green border */
+	background-color:#FFF;	/* Color de fondo de la lista */
+	text-align:left;
+	font-size:0.9em;
+	z-index:100;
+	font-size:11px;
+	
+}
+#ajax_listOfOptions div
+{	
+	margin:0px;		/*1*/
+	padding:1px;
+	cursor:pointer;
+	font-size:0.9em;
+}
+#ajax_listOfOptions .optionDiv{	}
+#ajax_listOfOptions .optionDivSelected
+{ 
+	background-color:#FF9900;
+	color:#FFF;
+	font-size:14px;
+	
+}
+#ajax_listOfOptions_iframe
+{
+	background-color:#000000;
+	position:absolute;
+	z-index:5;
+}

@@ -1,0 +1,61 @@
+.botonGI {
+	font-size: 10px;
+	font-family: Arial,Verdana,Times New Roman;
+	font-weight: bold;
+	margin: 3px 0px;
+	color: #FFF;
+	background-color:#39F;
+}
+#contenedoridiomas {
+	clear:both;
+	padding-top:20px;
+}
+.entrada {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+.etiqueta {
+	display: inline-block;
+	width: 90px; 
+	text-align: right;
+	vertical-align:top;
+	font-family: arial;
+	font-size: 10px;
+}
+.idioma {
+	float:left;
+}
+.imagenedicion {
+	margin:3px 0px;
+}
+.inactiva {
+	border:#F00 2px solid;
+}
+.inactivo {
+	background-color:#900 !important;
+}
+#left {
+	float:left;
+	text-align:center;
+	padding:10px;
+	width:150px
+}
+.nombreimagen {
+	margin:5px auto;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+}
+#right {
+	float:left;
+	padding:0px 5px
+}
+textarea {
+	resize:none;
+}
+.tituloidioma {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	margin-left:97px;
+}

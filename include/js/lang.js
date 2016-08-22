@@ -1,0 +1,32 @@
+var IC_lang = {
+	"ES": {
+		"emailRequired": "El correo electr&oacute;nico es requerido.",
+		"emailFormat": "El correo electr&oacute;nico debe tener un formato v&aacute;lido.",
+		"nameRequired": "El nombre es requerido.",
+		"nickRequired": "El alias es requerido.",
+		"nickFormat": "El alias debe de tener un formato v&aacute;lido. S&oacute;lo puede contener letras, n&uacute;meros, guion, guion bajo y punto, y debe de ser mayor a cuatro caracteres.",
+		"passRequired": "La contrase&ntilde;a es requerida.",
+		"passNotEquals": "Las contrase&ntilde;as no coinciden.",
+		"confirmLogOut": "&iquest;Seguro que desea salir?",
+		"select": "Seleccione...",
+		"selectCountry": "Seleccione pa&iacute;s...",
+		"logInFacebook": "Espere un momento, por favor. Facebook se est&aacute; conectando.",
+		"cancel": "Cancelar",
+		"accept": "Aceptar",
+	},
+	"EN": {
+		"emailRequired": "The e-Mail is required.",
+		"emailFormat": "The e-Mail must have a valid format.",
+		"nameRequired": "The name is required.",
+		"nickFormat": "The nickname musy have a valid format. This can only contain letters, numbers, dot, dash and underscore, and must have more than four characters.",
+		"nickRequired": "The nickname is required.",
+		"passRequired": "The password is required.",
+		"passNotEquals": "The passwords don't match.",
+		"confirmLogOut": "Are you sure you want to logout?",
+		"select": "Select...",
+		"selectCountry": "Select country...",
+		"logInFacebook": "Please, wait a moment. We are connecting to Facebook.",
+		"cancel": "Cancel",
+		"accept": "Log Out",
+	}
+};

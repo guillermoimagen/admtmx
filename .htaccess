@@ -1,0 +1,50 @@
+DirectoryIndex index.php
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	
+	RewriteRule ^remote/(.*)/(.*)/$ APIRemote/$1.handler.php?action=$2 [QSA]
+	RewriteRule ^validacion/(.*)/$ APIRemote/validarUsuario.php?modo=validaUsuario&token=$1
+	RewriteRule ^recuperar/(.*)/$ index.php?tokenrecuperar=$1
+
+	RewriteRule iniciativa/([0-9]*)/([0-9]*)/(.*).html$ iniciativaDetalle.php?idioma=$1&idregistro=$2&urlamigable=$3
+	RewriteRule initiative/([0-9]*)/([0-9]*)/(.*).html$ iniciativaDetalle.php?idioma=$1&idregistro=$2&urlamigable=$3
+	RewriteRule pagos/([0-9]*)/([0-9]*)/(.*).html$ pagos.php?idioma=$1&idiniciativa=$2&urlamigable=$3
+	RewriteRule payments/([0-9]*)/([0-9]*)/(.*).html$ pagos.php?idioma=$1&idiniciativa=$2&urlamigable=$3
+	
+	RewriteRule pagosUsuario/([0-9]*)/([0-9]*)/(.*).html$ pagos.php?idioma=$1&idusuario=$2&urlamigable=$3
+	RewriteRule paymentsUser/([0-9]*)/([0-9]*)/(.*).html$ pagos.php?idioma=$1&idusuario=$2&urlamigable=$3
+	RewriteRule usuario/([0-9]*)/([0-9]*)/(.*).html$ usuarioDetalle.php?idioma=$1&idregistro=$2&urlamigable=$3
+	RewriteRule user/([0-9]*)/([0-9]*)/(.*).html$ usuarioDetalle.php?idioma=$1&idregistro=$2&urlamigable=$3
+		
+	RewriteRule pagos.html$ pagos.php?idioma=0
+	RewriteRule payments.html$ pagos.php?idioma=1
+	
+	RewriteRule contacto.html$ index.php?idioma=0
+	RewriteRule contact.html$ index.php?idioma=1
+
+	
+	
+	RewriteRule nuevasIniciativas$ iniciativasListado.php?idioma=0&modo=nuevasIniciativas
+	RewriteRule newInitiatives$ iniciativasListado.php?idioma=1&modo=nuevasIniciativas
+	
+	RewriteRule iniciativas-de-embajadores$ iniciativasListado.php?idioma=0&tipo=embajadores
+	RewriteRule iniciativas-de-artistas$ iniciativasListado.php?idioma=0&tipo=artistas
+	RewriteRule iniciativas-de-empresas$ iniciativasListado.php?idioma=0&tipo=empresas
+	
+	RewriteRule individual-initiatives$ iniciativasListado.php?idioma=1&tipo=embajadores
+	RewriteRule artist-initiatives$ iniciativasListado.php?idioma=1&tipo=artistas
+	RewriteRule company-initiatives$ iniciativasListado.php?idioma=1&tipo=empresas
+	
+	RewriteRule noticias$ noticias.php?idioma=0
+	RewriteRule news$ noticias.php?idioma=1
+	
+	RewriteRule noticias/([0-9]*)/([0-9]*)/(.*).html$ noticiaDetalle.php?idioma=$1&idregistro=$2&urlamigable=$3
+	RewriteRule news/([0-9]*)/([0-9]*)/(.*).html$ noticiaDetalle.php?idioma=$1&idregistro=$2&urlamigable=$3
+	
+	RewriteRule contenidos/([0-9]*)/([0-9]*)/(.*).html$ contDetalle.php?idioma=$1&idregistro=$2&urlamigable=$3
+	RewriteRule content/([0-9]*)/([0-9]*)/(.*).html$ contDetalle.php?idioma=$1&idregistro=$2&urlamigable=$3
+	
+</IfModule>
+Options -Indexes
+ 

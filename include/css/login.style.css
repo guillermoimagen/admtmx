@@ -1,0 +1,41 @@
+.ventanaEmergentePrincipal{
+	display: none;
+	width: 500px;
+}
+.fm_op{
+	font-size: 12px;
+	text-align: center;
+	width: auto;
+	text-decoration: underline;
+}
+.fm_op span{
+	cursor: pointer;
+}
+.fm_lg{
+	font-size: 16px;
+}
+.fm_lg .fm_lb{
+	width: 150px;
+	display: inline-block;
+	font-weight: bold;
+}
+.fm_lg input{
+	font-size: 16px;
+}
+.btn_sm{
+	width: 110px;
+    font-size: 11px !important;
+    margin: 10px auto;
+    display: block;
+    height: auto;
+    padding: 5px 5px;
+}
+.messageResponse{
+	text-align: center;
+	font-size: 16px;
+	color: red;
+}
+.fm_ch{
+	margin: 3px auto;
+	width: 304px;
+}

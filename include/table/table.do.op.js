@@ -1,0 +1,8 @@
+// Title: Tigra Tables PRO
+// URL: http://www.softcomplex.com/products/tigra_tables_pro/
+// Version: 2.1
+// Date: 03-09-2004 (mm-dd-yyyy)
+// Notes: Registration needed to use this script legally.
+//	Visit official site for details.
+
+function TTP0I(TTP0J,TTP0K){var TTPQ=this.TTPX[TTP0K?'hovered':this.TTP0L[TTP0J]>0?'marked':TTP0J%2?'odd':'even'];for(var TTPR in this.TTPY)if(!this.TTPY[TTPR].TTPZ){TTP0M=d.getElementById('T'+this.id+'row'+TTP0J+'TTPU'+TTPR);TTP0M.style.backgroundColor=TTPQ}}function TTP0N(TTP0J){if(this.TTP0L[TTP0J]){this.TTP0L[TTP0J]=0}else{this.TTP0L[TTP0J]=1;if(!this.TTP0B){if(this.TTP0C){this.TTP0L[this.TTP0C]=0}this.TTP0C=TTP0J}}if(this.TTP0F){var TTP08=[],TTP0G=[];for(var TTPR in this.TTPY)TTP08[TTP08.length]=this.TTPa[TTP0J][TTPR];for(TTPR in this.TTP0L)if(this.TTP0L[TTPR]>0)TTP0G[TTP0G.length]=this.TTPa[TTPR][this.TTP0H];this.TTP0F(TTP08,TTP0G)}}function TTPP(){var TTPH='',TTPQ,i,TTPR,TTPS=Math.min((this.TTPT.TTPU*1+1)*this.TTPT.TTPV,this.TTPW);this.TTP0O=TTP0I;this.M=TTP0N;for(i=this.TTPT.TTPU*this.TTPT.TTPV;i<TTPS;i++){TTPQ=this.TTPX[i%2?'odd':'even'];TTPH+=['<tr',TTPQ?' bgcolor='+TTPQ:'',this.TTPX.hovered?[' onmouseover="TTablePRO[',this.id,'].TTP0O(',i,',1)" onmouseout="TTablePRO[',this.id,'].TTP0O(',i,')"'].join(''):'',this.TTPX.marked?' onclick="TTablePRO['+this.id+'].M('+i+')"':'',">"].join('');for(TTPR in this.TTPY)if(!this.TTPY[TTPR].TTPZ)TTPH+=this.buildCell(this.TTPc[i][TTPR],(this.TTPY[TTPR].f_css(this.TTPb[this.TTPc[i][this.TTPd]][TTPR],this.TTPc[i][TTPR])?' class="'+this.TTPY[TTPR].f_css(this.TTPb[this.TTPc[i][this.TTPd]][TTPR],this.TTPc[i][TTPR])+'" ':this.TTPe.body[TTPR]),'id="T'+this.id+'row'+i+'TTPU'+TTPR+'"');TTPH+="</tr>"}return TTPH}
